@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "Roboto";
+    src:url(./assets/fonts/static/Roboto-SemiBold.ttf) format("truetype");
+    font-weight: 600; /*SemiBold*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/static/Roboto-Bold.ttf) format("truetype");
+    font-weight: 700; /*Bold*/
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/fonts/static/Roboto-ExtraBold.ttf) format("truetype");
+    font-weight: 800; /*ExtraBold*/
+    font-style: normal;
+}
