@@ -36,6 +36,12 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Roboto", sans-serif; /*se incluye sans-serif por si la fuente principal no carga*/
+    font-size: var(--text-size-small);
+    color: var(--color-primary);
+}
+
 .hero{
     min-height: 100vh;
     display: flex;
@@ -55,7 +61,7 @@ a{
 }
 
 .hero-title{
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto";
     font-size: var(--text-size-large);
     color:rgb(9, 56, 40);
     /*color:var(--color-primary);*/
