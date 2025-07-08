@@ -22,11 +22,11 @@
     <meta name="twitter:image" content="https://www.tu-dominio.com/images/preview.jpg"> <!--Aun por modificar-->
 </head>
 <body>
-    <header class="cabecera">
+    <header class="header">
         <img src="./assets/images/logo.png" alt="logo">
-        <a href="#" id="enlace-menu" class="boton-menu">&#9776;</a>
+        <a href="#" id="menu-link" class="menu-button">&#9776;</a>
         <nav>
-            <ul class="menu-principal">
+            <ul class="main-menu">
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -44,17 +44,20 @@
     </header>
     <!--Hero section-->
     <main>
-        <section>
+        <section class="hero">
+          <div class="hero-content">
+            <p class="hero-greeting">Hi there, I'm</p>
             <h1 class="hero-title">Cecilia de la Cámara</h1>
             <h2 class="hero-subtitle">Full Stack Developer</h2>
             <p class="hero-description">
                 Passionate about transforming ideas into seamless digital experiences, I blend development techniques with design thinking to create solutions that are both functional and visually compelling. 
             </p>
-            <!--botones/usar una clase común para los dos/previsar-->
+            <!--botones/usar una clase común para los dos/revisar-->
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-projects">View My Work</a>
                 <a href="#contact" class="btn btn-contact">Get In Touch</a>
             </div>
+          </div>
         </section>
     </main>
     <script src="./home/js/javascript.js"></script>   
