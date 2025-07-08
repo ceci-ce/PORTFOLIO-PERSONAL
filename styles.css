@@ -40,6 +40,33 @@ body{
     font-family: "Roboto", sans-serif; /*se incluye sans-serif por si la fuente principal no carga*/
     font-size: var(--text-size-small);
     color: var(--color-primary);
+    /*background-color: var(--color-primary);*/
+    background-color: rgb(124, 160, 160); /*es temporal*/
+}
+
+header{
+    border: 1px solid red;
+    padding: 2rem 4rem;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--gap);
+
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+}
+
+header ul{
+    display: flex;
+    gap: var(--gap)
+}
+
+header a{
+    color:var(--color-primary)
 }
 
 .hero{
@@ -63,8 +90,7 @@ a{
 .hero-title{
     font-family: "Roboto";
     font-size: var(--text-size-large);
-    color:rgb(9, 56, 40);
-    /*color:var(--color-primary);*/
+    color:var(--color-primary);
     margin-bottom: var(--gap);
 }
 
