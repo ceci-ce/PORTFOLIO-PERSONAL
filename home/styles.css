@@ -1,3 +1,17 @@
+:root{
+    --color-primary:#ffffff;
+    --color-secondary:#C5B3B3;
+    --color-accent:#FFC14C;
+    --color-tertiary:#F2F0F0;
+    --text-size-small: 16px;
+    --text-size-medium: 32px;
+    --text-size-large: 48px;
+    --gap: 20px;
+}
+
+
+
+
 @font-face{
     font-family: "Roboto";
     src:url(./assets/fonts/static/Roboto-SemiBold.ttf) format("truetype");
