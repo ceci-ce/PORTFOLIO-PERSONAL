@@ -3,10 +3,10 @@
     --color-secondary:#C5B3B3;
     --color-accent:#FFC14C;
     --color-tertiary:#F2F0F0;
-    --text-size-small: 16px;
-    --text-size-medium: 32px;
-    --text-size-large: 48px;
-    --gap: 20px;
+    --text-size-small: 1.125;
+    --text-size-medium: 2rem;
+    --text-size-large: 4.375rem;
+    --gap: 1.25rem;
 }
 
 @font-face{
@@ -59,7 +59,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 10rem;
     gap:var(--gap);
 }
 
@@ -67,6 +67,7 @@ body{
     display: flex;
     gap: 2rem;
     list-style: none;
+    font-size: var(--text-size-small);
 }
 
 .menu-button{
@@ -143,18 +144,26 @@ header a{
     min-height: 100vh; /*100% de la altura de mi pantalla*/
     background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     position: relative;
-    padding: 8rem 5rem;
+    padding: 12rem 9rem;
     overflow: hidden;
 }
 
 .hero-content{
     padding: 1em;
-
 }
 
+.hero-greeting{
+    font-family: "Roboto",sans-serif;
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 
 .hero-title{
@@ -162,6 +171,18 @@ header a{
     font-size: var(--text-size-large);
     color:var(--color-primary);
     margin-bottom: var(--gap);
+}
+
+.hero-subtitle{
+    font-size: var(--text-size-medium);
+    margin-bottom: 2rem;
+    color: var(--color-tertiary);
+}
+
+.hero-description{
+    font-size: var(--text-size-small);
+    margin-bottom: 2.5rem;
+    color: var(--color-primary);
 }
 
 .grid-container{
