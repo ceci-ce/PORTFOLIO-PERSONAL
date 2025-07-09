@@ -70,6 +70,7 @@ body{
     align-items: center;
     padding: 1.5rem 10rem;
     gap:var(--gap);
+    position: relative;
 }
 
 .main-menu{
@@ -86,6 +87,7 @@ body{
     display: none;
     cursor: pointer;
     transition: transform 0.3s ease;
+    margin-left: auto;
 }
 
 .menu-button:hover{
@@ -140,18 +142,8 @@ header a{
     color:var(--color-primary)
 }
 
-/* Media query para pantallas pequeñas
-
-@media screen and (max-width: 768px){
-    .header{
-        flex-direction: column;
-        height:auto;
-        padding: 1rem;
-        align-items: flex-start;
-    } 
-}
-*/
 /*hero*/
+
 .hero{
     background: url(./assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG) no-repeat 50% 50%;
     min-height: 100vh; /*100% de la altura de mi pantalla*/
@@ -252,4 +244,51 @@ header a{
    background-color: var(--color-accent); 
    border: 2px solid var(--color-accent);
    color: var(--color-primary);
+}
+
+/* Media query para pantallas pequeñas*/
+
+@media screen and (max-width: 768px){
+    .menu-button{
+        display: block;
+    }
+    .main-menu{
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        background-color: var(--color-secondary);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 15px 20px;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+    }
+
+    .main-menu.dropdown-menu{
+        display: flex;
+    }
+
+    .main-menu a{
+        padding: 10px 12px;
+        font-size: var(--text-size-small);
+    }
+
+    main{
+        padding: 30px;
+    }
+
+
+    .header{
+        flex-direction: row;
+        padding: 1rem 1.5rem;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    } 
+
+    .logo{
+        height: 60px;
+    }
 }
