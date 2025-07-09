@@ -1,3 +1,5 @@
+/*variables*/
+
 :root{
     --color-primary:#ffffff;
     --color-secondary:#C5B3B3;
@@ -8,6 +10,8 @@
     --text-size-large: 4.375rem;
     --gap: 1.25rem;
 }
+
+/*fuentes*/
 
 @font-face{
     font-family: "Roboto";
@@ -30,6 +34,8 @@
     font-style: normal;
 }
 
+/*general*/
+
 *{
     margin:0;
     padding: 0;
@@ -44,12 +50,16 @@ a{
     text-decoration: none;
 }
 
+/*body*/
+
 body{
     font-family: "Roboto", sans-serif; /*se incluye sans-serif por si la fuente principal no carga*/
     font-size: var(--text-size-small);
     color: var(--color-primary);
     background-color: var(--color-primary);
 }
+
+/*header*/
 
 .header{
     background-color: var(--color-secondary);
@@ -137,7 +147,7 @@ header a{
     } 
 }
 */
-
+/*hero*/
 .hero{
     background: url(./assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG) no-repeat 50% 50%;
     min-height: 100vh; /*100% de la altura de mi pantalla*/
@@ -192,7 +202,7 @@ header a{
     display: grid;
 }
 
-/*botones provisionales*/
+/*botones*/
 
 .hero-buttons{
     display: flex;
@@ -208,6 +218,10 @@ header a{
   font-size: var(--text-size-small);
   transition: background-color 0.3s ease;
   color: var(--color-primary);
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border 0.3s ease;
 }
 
 .btn-projects {
@@ -216,9 +230,22 @@ header a{
   padding: 0.75rem 2.5rem; /* para que el boton izquiero sea más ancho*/
 }
 
+/* para ponerle el mismo estilo que el .btn-contact*/
+.btn-projects:hover{
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: var(--color-primary);
+}
 
 .btn-contact {
   background-color:none;
   border: 2px solid #ffffff;
   padding: 0.75rem 2rem;
+}
+
+/* para ponerle el mismo estilo que el .btn-projects*/
+.btn-contact:hover{
+   background-color: var(--color-accent); 
+   border: 2px solid var(--color-accent);
+   color: var(--color-primary);
 }
