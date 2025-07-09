@@ -125,8 +125,12 @@ body{
 .logo{
     height: 120px;
     width: auto;
+    transition: transform 0.3s ease;
 }
 
+.logo:hover{
+    transform: scale(1.2);
+}
 header ul{
     display: flex;
     gap: var(--gap);
@@ -238,7 +242,7 @@ header a{
 }
 
 .btn-contact {
-  background-color:none;
+  background-color: transparent;
   border: 2px solid #ffffff;
   padding: 0.75rem 2rem;
 }
