@@ -65,7 +65,9 @@ body{
     display: inline-block;
     font-weight: 600;
     color: var(--color-primary);
-    transition: color 0.3s ease;
+    transition: 
+        color 0.3s ease,
+        transform 0.3s ease; /* para agrandar el texto*/
 }
 
 /*para crear una linea debajo del enlace al hacer hover*/
@@ -80,6 +82,10 @@ body{
     transition: color 0.3s ease;
 }
 
+.main-menu li a:hover{
+    color: var(--color-accent);
+    transform: scale(1.1);
+}
 .main-menu li a:hover::after{
     width: 100%;
 }
