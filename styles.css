@@ -44,15 +44,44 @@ body{
     background-color: rgb(124, 160, 160); /*es temporal*/
 }
 
-header{
+.header{
     border: 1px solid red;
     padding: 2rem 4rem;
     height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--gap);
+    padding: 1.5rem 3rem;
+}
 
+.main-menu{
+    display: flex;
+    gap: var(--gap);
+    list-style: none;
+}
+
+.main-menu li a{
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+/*para crear una linea debajo del enlace al hacer hover*/
+.main-menu li a::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px; /*grosor de la linea*/
+    background-color: var(--color-accent);
+    transition: color 0.3s ease;
+}
+
+.main-menu li a:hover::after{
+    width: 100%;
 }
 
 .logo{
