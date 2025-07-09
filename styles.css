@@ -36,6 +36,14 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 body{
     font-family: "Roboto", sans-serif; /*se incluye sans-serif por si la fuente principal no carga*/
     font-size: var(--text-size-small);
@@ -118,7 +126,7 @@ header a{
     color:var(--color-primary)
 }
 
-/* Media query para pantallas pequeñas*/
+/* Media query para pantallas pequeñas
 
 @media screen and (max-width: 768px){
     .header{
@@ -126,15 +134,14 @@ header a{
         height:auto;
         padding: 1rem;
         align-items: flex-start;
-    }
-
-    
-    
+    } 
 }
+*/
 
 .hero{
-    background: url(./assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG);
+    background: url(./assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG) no-repeat 50% 50%;
     min-height: 100vh; /*100% de la altura de mi pantalla*/
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,13 +150,12 @@ header a{
     overflow: hidden;
 }
 
-ul{
-    list-style: none;
+.hero-content{
+    padding: 1em;
+
 }
 
-a{
-    text-decoration: none;
-}
+
 
 .hero-title{
     font-family: "Roboto";
