@@ -61,6 +61,19 @@ body{
     list-style: none;
 }
 
+.menu-button{
+    font-size: 28px;
+    color: var(--color-primary);
+    text-decoration: none;
+    /*display: none;*/
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-button:hover{
+    transform: scale(1.1);
+}
+
 .main-menu li a{
     position: relative;
     display: inline-block;
@@ -103,6 +116,20 @@ header ul{
 
 header a{
     color:var(--color-primary)
+}
+
+/* Media query para pantallas pequeñas*/
+
+@media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+        height:auto;
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    
+    
 }
 
 .hero{
