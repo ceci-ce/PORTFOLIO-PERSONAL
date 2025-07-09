@@ -45,7 +45,8 @@ body{
 }
 
 .header{
-    border: 1px solid red;
+    color: var(--color-secondary);
+    background-color: var(--color-secondary);
     padding: 2rem 4rem;
     height: 120px;
     display: flex;
@@ -56,7 +57,7 @@ body{
 
 .main-menu{
     display: flex;
-    gap: var(--gap);
+    gap: 70px;
     list-style: none;
 }
 
@@ -97,7 +98,7 @@ body{
 
 header ul{
     display: flex;
-    gap: var(--gap)
+    gap: var(--gap);
 }
 
 header a{
