@@ -45,19 +45,19 @@ body{
 }
 
 .header{
-    color: var(--color-secondary);
     background-color: var(--color-secondary);
-    padding: 2rem 4rem;
     height: 120px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
+    gap:var(--gap);
 }
 
 .main-menu{
     display: flex;
-    gap: 70px;
+    gap: 2rem;
     list-style: none;
 }
 
