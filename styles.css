@@ -3,7 +3,7 @@
     --color-secondary:#C5B3B3;
     --color-accent:#FFC14C;
     --color-tertiary:#F2F0F0;
-    --text-size-small: 1.125;
+    --text-size-small: 1.2rem;
     --text-size-medium: 2rem;
     --text-size-large: 4.375rem;
     --gap: 1.25rem;
@@ -48,8 +48,7 @@ body{
     font-family: "Roboto", sans-serif; /*se incluye sans-serif por si la fuente principal no carga*/
     font-size: var(--text-size-small);
     color: var(--color-primary);
-    /*background-color: var(--color-primary);*/
-    background-color: rgb(124, 160, 160); /*es temporal*/
+    background-color: var(--color-primary);
 }
 
 .header{
@@ -181,8 +180,12 @@ header a{
 
 .hero-description{
     font-size: var(--text-size-small);
+    /*font-size: 18px;*/
     margin-bottom: 2.5rem;
     color: var(--color-primary);
+    max-width: 55%;
+    line-height: 2; /*añade espacio entre lineas*/
+    letter-spacing: 0.05rem; /*separa un poco las letras*/
 }
 
 .grid-container{
@@ -191,21 +194,31 @@ header a{
 
 /*botones provisionales*/
 
+.hero-buttons{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.7rem;
+  border-radius: 2rem;
   text-decoration: none;
-  font-weight: 700; /*Bold*/
+  font-size: var(--text-size-small);
   transition: background-color 0.3s ease;
+  color: var(--color-primary);
 }
 
 .btn-projects {
-  background-color: #FFC14C; /*crear variable*/
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  padding: 0.75rem 2.5rem; /* para que el boton izquiero sea más ancho*/
 }
 
 
 .btn-contact {
   background-color:none;
   border: 2px solid #ffffff;
+  padding: 0.75rem 2rem;
 }
