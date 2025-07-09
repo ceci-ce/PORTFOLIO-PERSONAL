@@ -65,7 +65,7 @@ body{
     font-size: 28px;
     color: var(--color-primary);
     text-decoration: none;
-    /*display: none;*/
+    display: none;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -133,7 +133,8 @@ header a{
 }
 
 .hero{
-    min-height: 100vh;
+    background: url(./assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG);
+    min-height: 100vh; /*100% de la altura de mi pantalla*/
     display: flex;
     align-items: center;
     justify-content: center;
