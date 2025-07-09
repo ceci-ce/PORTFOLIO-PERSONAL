@@ -15,21 +15,21 @@
 
 @font-face{
     font-family: "Roboto";
-    src:url(./assets/fonts/static/Roboto-SemiBold.ttf) format("truetype");
+    src:url(../assets/fonts/static/Roboto-SemiBold.ttf) format("truetype");
     font-weight: 600; /*SemiBold*/
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(./assets/fonts/static/Roboto-Bold.ttf) format("truetype");
+    src: url(../assets/fonts/static/Roboto-Bold.ttf) format("truetype");
     font-weight: 700; /*Bold*/
     font-style: normal;
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(./assets/fonts/static/Roboto-ExtraBold.ttf) format("truetype");
+    src: url(../assets/fonts/static/Roboto-ExtraBold.ttf) format("truetype");
     font-weight: 800; /*ExtraBold*/
     font-style: normal;
 }
@@ -145,7 +145,7 @@ header a{
 /*hero*/
 
 .hero{
-    background: url(./assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG) no-repeat 50% 50%;
+    background: url(../assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG) no-repeat 50% 50%;
     min-height: 100vh; /*100% de la altura de mi pantalla*/
     background-size: cover;
     display: flex;
