@@ -70,7 +70,14 @@ body{
     align-items: center;
     padding: 1.5rem 10rem;
     gap:var(--gap);
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+main{
+    padding-top: 120px; /*para que no quede escondido detrás del header*/
 }
 
 .main-menu{
@@ -246,7 +253,7 @@ header a{
    color: var(--color-primary);
 }
 
-/* Media query para pantallas pequeñas*/
+/* Media query menu desplegable para pantallas pequeñas*/
 
 @media screen and (max-width: 768px){
     .menu-button{
@@ -285,7 +292,10 @@ header a{
         padding: 1rem 1.5rem;
         align-items: center;
         justify-content: space-between;
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
     } 
 
     .logo{
