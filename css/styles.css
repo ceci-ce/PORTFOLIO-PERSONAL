@@ -193,7 +193,6 @@ header a{
 
 .hero-description{
     font-size: var(--text-size-small);
-    /*font-size: 18px;*/
     margin-bottom: 2.5rem;
     color: var(--color-primary);
     max-width: 55%;
@@ -253,7 +252,7 @@ header a{
    color: var(--color-primary);
 }
 
-/* Media query menu desplegable para pantallas pequeñas*/
+/* Media query menu desplegable*/
 
 @media screen and (max-width: 768px){
     .menu-button{
@@ -301,4 +300,45 @@ header a{
     .logo{
         height: 60px;
     }
+}
+
+/* Media query menu seccion hero*/
+
+@media screen and (max-width: 768px){
+    .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 2rem; 
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
 }
