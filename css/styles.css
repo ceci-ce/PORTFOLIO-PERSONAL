@@ -1,4 +1,4 @@
-/*variables*/
+/* Variables */
 
 :root{
     --color-primary:#ffffff;
@@ -12,7 +12,7 @@
     --cards-font: "Manrope";
 }
 
-/*fuentes*/
+/* Fuentes */
 
 @font-face{
     font-family: "Roboto";
@@ -37,10 +37,10 @@
 
 @font-face {
     font-family: "Manrope";
-    src: url(../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf) format("truetype");;
+    src: url(../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf) format("truetype");
 }
 
-/*general*/
+/* General */
 
 *{
     margin:0;
@@ -56,7 +56,7 @@ a{
     text-decoration: none;
 }
 
-/*body*/
+/* Body */
 
 body{
     font-family: "Roboto", sans-serif; /*se incluye sans-serif por si la fuente principal no carga*/
@@ -65,7 +65,7 @@ body{
     background-color: var(--color-primary);
 }
 
-/*header*/
+/* Header */
 
 .header{
     background-color: var(--color-secondary);
@@ -151,7 +151,7 @@ header a{
     color:var(--color-primary)
 }
 
-/*hero*/
+/* Hero */
 
 .hero{
     background: url(../assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG) no-repeat 50% 50%;
@@ -206,7 +206,7 @@ header a{
     display: grid;
 }
 
-/*botones*/
+/* Botones */
 
 .hero-buttons{
     display: flex;
@@ -254,7 +254,7 @@ header a{
    color: var(--color-primary);
 }
 
-/* projects*/
+/* Projects */
 
 .projects{
     position: relative;
@@ -279,7 +279,7 @@ header a{
     margin-top: 0.5rem;
 }
 
-/*cards*/
+/* Cards */
 
 .projects-wrapper{
     background-color: var(--color-tertiary);
@@ -333,7 +333,7 @@ header a{
     line-height: 2;
 }
 
-/*About*/
+/* About */
 
 .about-container{
     width: 100%;
@@ -368,7 +368,7 @@ header a{
     box-shadow: 0px 6px 23px -15px rgba(0,0,0,0.75);
 }
 
-/*animación al hacer scroll*/
+/* Animación al hacer scroll */
 
 .about-description,
 .about-image {
@@ -388,7 +388,7 @@ header a{
     }
 }
 
-/*animación de forma escalonada*/
+/* Animación de forma escalonada */
 
 .about-description {
   animation-delay: 0.3s;
@@ -398,7 +398,7 @@ header a{
   animation-delay: 0.9s;
 }
 
-
+/* Contact */
 
 
 /* Media query menu desplegable*/
@@ -491,6 +491,7 @@ header a{
     text-align: center;
   }
 }
+
 
 /* Media query cards/ todavia por hacer */
 /* Media query about/ todavia por hacer */
