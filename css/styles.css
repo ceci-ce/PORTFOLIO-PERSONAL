@@ -400,6 +400,18 @@ header a{
 
 /* Contact */
 
+.grid-container-form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.form-label{
+
+}
 
 /* Media query menu desplegable*/
 
