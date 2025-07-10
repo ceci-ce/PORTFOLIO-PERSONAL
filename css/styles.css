@@ -134,12 +134,8 @@ main{
 .logo{
     height: 120px;
     width: auto;
-    transition: transform 0.3s ease;
 }
 
-.logo:hover{
-    transform: scale(1.2);
-}
 header ul{
     display: flex;
     gap: var(--gap);
@@ -252,6 +248,19 @@ header a{
    color: var(--color-primary);
 }
 
+/* projects*/
+
+.section-title-container h2{
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-secondary);
+   
+}
+
+.container{
+    color: var(--color-tertiary);
+}
 /* Media query menu desplegable*/
 
 @media screen and (max-width: 768px){
