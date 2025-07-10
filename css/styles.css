@@ -298,7 +298,8 @@ header a{
     background-color: #DAD3D3;
     width: 410px;
     margin: 60px auto;
-    padding: 10px 0px;
+    /*padding: 10px 0px;*/
+    padding: 0px 0px 10px;
     border-radius: 10px;
     gap: 15px;
     box-shadow: 0px 6px 23px -15px rgba(0,0,0,0.75);
