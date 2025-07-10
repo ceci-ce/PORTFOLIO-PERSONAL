@@ -9,6 +9,7 @@
     --text-size-medium: 2rem;
     --text-size-large: 4.375rem;
     --gap: 1.25rem;
+    --cards-font: "Manrope";
 }
 
 /*fuentes*/
@@ -285,18 +286,18 @@ header a{
     padding: 3rem;
     margin-left: 0;
     margin-right: auto;
-    margin-top:2rem;
+    margin-top: 2rem;
     border-radius: 20px;
     width: 80%;
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 .card{
     background-color: #DAD3D3;
-    width: 350px;
-    margin: 200px auto;
+    width: 410px;
+    margin: 60px auto;
     padding: 10px 0px;
     border-radius: 10px;
     gap: 15px;
@@ -314,8 +315,10 @@ header a{
 }
 
 .card > h4 {
-    font-size: 19px;
+    font-family: var(--cards-font);
+    font-size: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .card > div {
@@ -325,23 +328,12 @@ header a{
 .description {
     text-align: justify;
     margin: 15px 30px;
+    font-family: var(--cards-font);
+    font-size: 1.1rem;
+    line-height: 2;
 }
 
-/*
-.projects-wrapper{
-    background-color: var(--color-tertiary);
-    padding: 3rem;
-    margin-left: 0;
-    margin-right: auto;
-    margin-top:2rem;
-    border-radius: 20px;
-    width: 80%;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
 
-*/
 /* Media query menu desplegable*/
 
 @media screen and (max-width: 768px){
