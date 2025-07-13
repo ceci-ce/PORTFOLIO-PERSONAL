@@ -63,6 +63,7 @@ body{
     font-size: var(--text-size-small);
     color: var(--color-primary);
     background-color: var(--color-primary);
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -161,7 +162,7 @@ header a{
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
-    padding: 12rem 9rem;
+    padding: 12rem 5vw;
     overflow: hidden;
 }
 
@@ -400,18 +401,56 @@ header a{
 
 /* Contact */
 
+.contact{
+    display: flex;
+    justify-content: center;   
+    align-items: center;          
+}
+
+
+.contact-form{
+    background-color: #beaaaa;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 4rem;
+    border: 1px solid #F2F0F0;
+    width: 100%;
+    min-width: 300px;
+}
+
+/*antes lo tenia en center, ver que es mejor*/
 .grid-container-form{
     display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    justify-items: center;
-    align-content: center;
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+    justify-items: start;
+    align-content: start;
+    padding: 1.5rem;
 }
 
 .form-label{
-
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--color-tertiary);
 }
+
+/*cambiar todo esto
+.form-control{
+    width: 100%;
+    padding: 1rem;
+    background: rgba(187, 175, 175, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--color-primary);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+*/
 
 /* Media query menu desplegable*/
 
