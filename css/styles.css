@@ -282,6 +282,7 @@ header a{
 
 /* Cards */
 
+
 .projects-wrapper{
     background-color: var(--color-tertiary);
     padding: 3rem;
@@ -292,7 +293,7 @@ header a{
     width: 80%;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .card{
@@ -526,15 +527,6 @@ header a{
     font-size: 1.2rem;
     padding: 1rem 2rem;
   }
-
-  .projects-wrapper {
-    width: 90%; 
-    gap: 2rem;
-  }
-
-  .about-container {
-    padding: 8rem 20rem;
-  }
 }
 
 /* Media query menu seccion hero*/
@@ -579,5 +571,26 @@ header a{
 }
 
 
-/* Media query cards/ todavia por hacer */
+/* Media query cards */
+
+@media screen and (min-width: 1930px) {
+  .projects-wrapper {
+    width: 90%; 
+    max-width: 2200px;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  }
+
+  .card{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+    .projects-wrapper{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    }
+}
+
 /* Media query about/ todavia por hacer */
