@@ -85,7 +85,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 main{
@@ -477,6 +477,56 @@ header a{
     color: var(--color-primary);
 
 }
+
+/* Popup de cookies. MODIFICAR */
+
+.cookie-popup{
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+    right: 5%;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 12px;
+    /*display: none*/
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    font-family: var(--cards-font);
+    font-size: 1rem;
+    box-shadow: 0 6px 23px -10px rgba(0,0,0,0.3);
+    max-width: 600px;
+    z-index: 20;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.cookie-popup.show{
+    display: flex;
+}
+
+.cookie-popup button{
+    background-color: #a58f8f;
+    color: var(--color-primary);
+    border: none;
+    margin-top: 2rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-popup button:hover {
+    background-color: var(--color-accent);
+}
+.cookie-popup a{
+    color: var(--color-tertiary);
+    text-decoration: underline;
+    font-weight: 500;
+}
 /* Media query menu desplegable*/
 
 @media screen and (max-width: 768px){
@@ -516,7 +566,7 @@ header a{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 10;
     } 
 
     .logo{
