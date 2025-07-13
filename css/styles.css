@@ -56,6 +56,15 @@ a{
     text-decoration: none;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Body */
 
 body{
@@ -473,9 +482,11 @@ header a{
         top: 100%;
         right: 0;
         left: 0;
-        padding: 15px 20px;
+        padding: 15px 5%;
         box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
         z-index: 100;
+        box-sizing: border-box;
+        max-width: 100%;
     }
 
     .main-menu.dropdown-menu{
@@ -486,11 +497,6 @@ header a{
         padding: 10px 12px;
         font-size: var(--text-size-small);
     }
-
-    main{
-        padding: 30px;
-    }
-
 
     .header{
         flex-direction: row;
@@ -540,13 +546,21 @@ header a{
     .hero {
     flex-direction: column;
     align-items: center;
-    padding: 8rem 2rem; 
     text-align: center;
+    padding-top: 8rem; 
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .hero-content {
-    max-width: 100%;
-    padding: 0;
+    padding: 1.5rem;
+  }
+
+  .hero-greeting{
+    padding-left: ;
   }
 
   .hero-title {
@@ -565,7 +579,7 @@ header a{
   .hero-buttons {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .btn {
@@ -617,3 +631,5 @@ header a{
         font-size: 0.9rem;
     }
 }
+
+
