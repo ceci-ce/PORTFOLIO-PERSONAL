@@ -158,6 +158,9 @@ header a{
     background: url(../assets/images/mymind-XUlsF9LYeVk-unsplash-recorte.JPG) no-repeat 50% 50%;
     min-height: 100vh; /*100% de la altura de mi pantalla*/
     background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
