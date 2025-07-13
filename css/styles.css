@@ -530,6 +530,10 @@ header a{
     max-width: 70%; 
   }
 
+  .hero-buttons{
+    padding-top: 3rem;
+  }
+
   .btn {
     font-size: 1.2rem;
     padding: 1rem 2rem;
@@ -555,7 +559,9 @@ header a{
     padding: 1.5rem;
   }
 
-  
+  .hero-greeting{
+    justify-content: center;
+  }
   .hero-title {
     font-size: 2.5rem;
   }
@@ -573,6 +579,7 @@ header a{
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding-top: 3rem;
   }
 
   .btn {
@@ -635,11 +642,34 @@ header a{
 @media screen and (max-width: 1400px) {
     .about-container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 2rem;
+        gap: 3rem;
+    }
+
+    .about-description, .about-image{
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .about-description{
+        font-size: 0.75rem;
+        padding: 2rem;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 1000px) {
     .about-description{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+        padding: 1.5rem;
+    }
+
+    .about-image img{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
     }
 }
