@@ -478,6 +478,36 @@ header a{
 
 }
 
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 100%;
+    z-index: 10;
+    gap:var(--gap);
+    background-color: var(--color-secondary); ;
+    padding: 1.5rem 10rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem; 
+}
+
+.social-link {
+  color: var(--color-primary);
+  font-size: 1.8rem; 
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--color-accent); 
+}
+
 /* Popup de cookies */
 
 .cookie-popup{
@@ -488,7 +518,7 @@ header a{
     background-color: var(--color-secondary);
     color: var(--color-primary);
     border-radius: 12px;
-    /*display: none;*/
+    display: none;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
@@ -527,6 +557,7 @@ header a{
     text-decoration: underline;
     font-weight: 500;
 }
+
 /* Media query menu desplegable*/
 
 @media screen and (max-width: 768px){
