@@ -6,6 +6,8 @@ El sitio está desarrollado en HTML, CSS y JavaScript, adaptado para diferentes 
 
 Los proyectos que aparecen actualmente son ficticios y los he creado con fines educativos. Mi idea es ir reemplazándolos poco a poco por trabajos reales a medida que avance.
 
+![Vista previa del sitio] (assets/images/portfolio.png)
+
 ## 🧩 Secciones principales
 
 - **Inicio** – presentación rápida del sitio
