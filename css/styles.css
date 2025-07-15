@@ -757,9 +757,9 @@ header a{
 }
 
 @media screen and (max-width: 1000px) {
-    .about-description{
-        font-size: 0.7rem;
-        padding: 1.5rem;
+    .about .about-container .about-description{
+        font-size: 0.8rem;
+        padding: 1.5rem; 
     }
 
     .about-image img{
