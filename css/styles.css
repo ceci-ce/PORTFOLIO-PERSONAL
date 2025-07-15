@@ -120,7 +120,7 @@ main{
     color: var(--color-primary);
     transition: 
         color 0.3s ease,
-        transform 0.3s ease; /* para agrandar el texto*/
+        transform 0.3s ease; /* para agrandar el texto */
 }
 
 /*para crear una linea debajo del enlace al hacer hover*/
@@ -243,7 +243,7 @@ header a{
   padding: 0.75rem 2.5rem; /* para que el boton izquiero sea más ancho*/
 }
 
-/* para ponerle el mismo estilo que el .btn-contact*/
+/* para ponerle el mismo estilo que el .btn-contact */
 .btn-projects:hover{
     background-color: transparent;
     border: 2px solid #ffffff;
@@ -256,7 +256,7 @@ header a{
   padding: 0.75rem 2rem;
 }
 
-/* para ponerle el mismo estilo que el .btn-projects*/
+/* para ponerle el mismo estilo que el .btn-projects */
 .btn-contact:hover{
    background-color: var(--color-accent); 
    border: 2px solid var(--color-accent);
@@ -475,7 +475,6 @@ header a{
     background-color: transparent;
     border: 2px solid var(--color-accent);
     color: var(--color-primary);
-
 }
 
 /* Footer */
@@ -558,6 +557,7 @@ header a{
     font-weight: 500;
 }
 
+/* Medias queries */
 /* Media query menu desplegable*/
 
 @media screen and (max-width: 768px){
