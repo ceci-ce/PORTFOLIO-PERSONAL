@@ -605,6 +605,23 @@ header a{
     }
 }
 
+/* Media query seccion titulo */
+
+@media screen and (max-width: 768px){
+    .section-title-container{
+        .section-title{
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        .section-subtitle{
+            font-size: 1rem;
+            padding: 0.3rem;
+            max-width: 70%;
+            margin-left: 15%;
+        }
+    }
+}
+
 /* Media query seccion Home pantallas grandes */
 
 @media screen and (min-width: 1600px) {
